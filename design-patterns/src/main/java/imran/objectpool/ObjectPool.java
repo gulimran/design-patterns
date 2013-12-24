@@ -5,12 +5,12 @@ import java.util.List;
 
 import static imran.objectpool.PoolItem.getInstanceFor;
 
-public class PoolManager {
+public class ObjectPool {
 
     private final int maxPoolSize;
     private final List<PoolItem> objectPool;
 
-    public PoolManager(int maxPoolSize) {
+    public ObjectPool(int maxPoolSize) {
         this.maxPoolSize = maxPoolSize;
         this.objectPool = new ArrayList<PoolItem>(maxPoolSize);
     }
